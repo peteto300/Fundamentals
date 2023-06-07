@@ -1,0 +1,11 @@
+year = int(input())
+unique_num = 0
+while True:
+    year += 1
+    year_str = str(year)
+    list_digits = list(map(int, year_str))
+
+    if list_digits[0] != list_digits[1] and list_digits[0] != list_digits[2] and list_digits[0] != list_digits[3] and list_digits[1] != list_digits[2] and list_digits[3] != list_digits[2] and list_digits[1] != list_digits[3]:
+        unique_num = year_str
+        break
+print(unique_num)
